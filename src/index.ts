@@ -24,10 +24,15 @@ bot.on("message", async (msg) => {
   });
 
   const chatId = msg.chat.id;
-
-  //   bot.sendMessage(chatId, "");
-
+  const text = msg.text;
   const basePromptOuput = baseCompletion.data.choices.pop();
+
+  if (text === "start") {
+    bot.sendMessage(
+      chatId,
+      "Hi, I'm a bot that can generate text for you, just send me a message and I'll try to generate a text for you"
+    );
+  }
 
   if (!basePromptOuput?.text) {
     return bot.sendMessage(
