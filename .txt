@@ -1,0 +1,1 @@
+https://api.telegram.org/bot6191082823:AAG54SxhPLnUmpb33RJE-4w1NnIpAzpwn_A/setWebhook?url=https://openai-telegram-bot-production.up.railway.app/
